@@ -7,9 +7,9 @@ package ite.homework;
  * i put it in a folder named ite.homework cuz its our domain lololo p.s we don't have a domain but that
  * is the right thing to do
  * 
- * i put  "public" to the class to make is accessible cuz it has the main method 
+ * i put  "public" to the class to make it accessible cuz it has the main method and it is the only class in the package
  * 
- * i put private to all class member and made a setter and getter to all of them cuz its from the java rules
+ * i put private to all class member and made a setter and getter to all of them cuz its the hole idea of OOP way (encapsulation and privacy)
  *  
  * i made a doc for main method 
  * 
@@ -46,7 +46,6 @@ public class Variables {
 	/**
 	 * its the main method of the application 
 	 * it print "Hello, World" 
-	 * u can pass any thing to it
 	 */
 	public static void main(String[] args) {
 		int localVariable;
