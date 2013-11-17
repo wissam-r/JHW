@@ -17,11 +17,17 @@ package ite.homework;
  */
 
 public class Variables {
+	public Variables() {
+		// TODO Auto-generated constructor stub
+		
+		
+	}
 	
 	/**
 	 * this is a classVariable
 	 */
 	private static int CLASSVARIABLE ;
+	
 	public static int getCLASSVARIABLE() {
 		return CLASSVARIABLE;
 	}
@@ -37,7 +43,7 @@ public class Variables {
 	public int getInstanceVariable() {
 		return instanceVariable;
 	}
-	public void setInstanceVariable(int instanceVariable) {
+	public void setInstanceVariable(int instanceVariable) {		
 		this.instanceVariable = instanceVariable;
 	}
 	
@@ -48,7 +54,20 @@ public class Variables {
 	 * it print "Hello, World" 
 	 */
 	public static void main(String[] args) {
-		int localVariable;
+		System.out.println(getCLASSVARIABLE());
+		setCLASSVARIABLE(1);
+		System.out.println(getCLASSVARIABLE());
+		
+		Variables testVariable = new Variables() ;
+		System.out.println(testVariable.getInstanceVariable());
+		testVariable.setInstanceVariable(1);
+		System.out.println(testVariable.getInstanceVariable());
+		
+		int localVariable  ;
+		localVariable = 9 ;
+		System.out.println(localVariable);
+		
+		
 		System.out.println("Hello, World");
 	}
 
