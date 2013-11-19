@@ -1,4 +1,3 @@
-package ite.homework;
 
 /**
  * @author Wissam
@@ -52,6 +51,7 @@ public class Variables {
 	/**
 	 * its the main method of the application 
 	 * it print "Hello, World" 
+	 * @param args
 	 */
 	public static void main(String[] args) {
 		System.out.println(getCLASSVARIABLE());
@@ -70,11 +70,4 @@ public class Variables {
 		
 		System.out.println("Hello, World");
 	}
-
-
-
-
-
-	
-
 }
