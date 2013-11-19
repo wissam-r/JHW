@@ -26,13 +26,13 @@ public class Variables {
 	/**
 	 * this is a classVariable
 	 */
-	private static int CLASSVARIABLE ;
+	private static int classVariable ;
 	
 	public static int getCLASSVARIABLE() {
-		return CLASSVARIABLE;
+		return classVariable;
 	}
 	public static void setCLASSVARIABLE(int cLASSVARIABLE) {
-		CLASSVARIABLE = cLASSVARIABLE;
+		classVariable = cLASSVARIABLE;
 	}
 
 
