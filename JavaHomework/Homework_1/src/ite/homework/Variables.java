@@ -1,3 +1,5 @@
+package ite.homework;
+
 
 /**
  * @author Wissam
@@ -26,14 +28,14 @@ public class Variables {
 	 * this is a classVariable
 	 */
 	private static int classVariable ;
-	
-	public static int getCLASSVARIABLE() {
+
+
+	public static int getClassVariable() {
 		return classVariable;
 	}
-	public static void setCLASSVARIABLE(int cLASSVARIABLE) {
-		classVariable = cLASSVARIABLE;
+	public static void setClassVariable(int classVariable) {
+		Variables.classVariable = classVariable;
 	}
-
 
 	/**
 	 * this is an instaceVariable
@@ -54,9 +56,9 @@ public class Variables {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println(getCLASSVARIABLE());
-		setCLASSVARIABLE(1);
-		System.out.println(getCLASSVARIABLE());
+		System.out.println(getClassVariable());
+		setClassVariable(1);
+		System.out.println(getClassVariable());
 		
 		Variables testVariable = new Variables() ;
 		System.out.println(testVariable.getInstanceVariable());
