@@ -43,9 +43,17 @@ public class Product implements Comparable<Product>{
         this.quanity = quanity;
     }
     
+    private static int InstanceCount = 0;
+
+    public static int getInstanceCount() {
+        return InstanceCount;
+    }
+    
+            
     public Product (int productID , String ProductName){
         setProductID(productID);
         setProductName(ProductName);
+        InstanceCount++;
     }
     public Product (int productID , String productName , float price  ,int quanity){
         this(productID,productName) ;
@@ -85,13 +93,14 @@ public class Product implements Comparable<Product>{
     public int compareTo(Product o) {
         return (int)(this.getPrice() - o.getPrice()) ;
     }
-    public static Comparator<Product> getPoductNameCorparator = new Comparator<Product>() {
-
+    public static Comparator<Product> getPoductNameCorparator(){
+        return new Comparator<Product>() {
         @Override
         public int compare(Product o1, Product o2) {
             return o1.getProductName().compareTo(o2.getProductName()) ;
         }
-    } ;
+        } ;
+    }
 }
     
 //    public static PoductNameCorparator  getPoductNameCorparator(){
