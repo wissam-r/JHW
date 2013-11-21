@@ -15,7 +15,7 @@ import java.util.LinkedList;
  * @author DigitalNet
  */
 public class ProductStore {
-    LinkedList<Product> products;
+    LinkedList<Product> products = new LinkedList<>();
     
     public void addProduct(Product product){
         products.add(product);
@@ -27,7 +27,7 @@ public class ProductStore {
         return products.get(i);
     }
     public void sortByName(){
-        Collections.sort(products, Product.getPoductNameCorparator);
+        Collections.sort(products, Product.getPoductNameCorparator());
     }
     public int productCount(){
         return products.size();
