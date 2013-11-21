@@ -20,8 +20,8 @@ public class ProductStore {
     public void addProduct(Product product){
         products.add(product);
     }
-    public void addProduct(int id,String name,float price,int quntity){
-        products.add(new Product(id,name,price,quntity));
+    public void addProduct(int productID,String name,float price,int quntity){
+        products.add(new Product(productID,name,price,quntity));
     }
     public Product getProductAtIndex(int i){
         return products.get(i);
