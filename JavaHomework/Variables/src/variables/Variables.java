@@ -1,5 +1,6 @@
-package ite.homework;
 
+
+package variables;
 
 /**
  * @author Wissam
