@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package thirdquestion;
+
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 /**
@@ -109,6 +106,8 @@ public class ThirdQuestion {
    static void testShowInputDialog(){
        String s = JOptionPane.showInputDialog("Enter value:");
        int x = Integer.parseInt(s);
+       //int x = Integer.valueOf(s);
+       
    }
     public static void main(String[] args) {
         // TODO code application logic here
